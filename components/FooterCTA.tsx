@@ -54,9 +54,9 @@ const FooterCTA: React.FC = () => {
                     Let’s design the system behind your next phase of growth.
                 </p>
                 
-                <a 
+                <a
                     href={LINKS.website}
-                    className="inline-flex items-center bg-accent text-primary font-bold py-5 px-10 rounded-none text-sm uppercase tracking-widest hover:bg-white hover:text-primary transition-colors"
+                    className="inline-flex items-center bg-accent text-white font-bold py-5 px-10 rounded-none text-sm uppercase tracking-widest hover:bg-white hover:text-primary transition-colors"
                 >
                     Schedule a Strategy Session <ArrowRight className="ml-3 w-5 h-5" />
                 </a>
