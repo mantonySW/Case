@@ -56,11 +56,13 @@ const FooterCTA: React.FC = () => {
                     Spotify saw it. 500+ other organizations saw it. Systems compound—or they decay. There's no in-between.
                 </p>
                 
-                <a 
-                    href={LINKS.website}
-                    className="inline-flex items-center bg-accent text-primary font-bold py-5 px-10 rounded-none text-sm uppercase tracking-widest hover:bg-white hover:text-primary transition-colors"
+                <a
+                    href="https://article.slxbox.com/demo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-accent text-white font-bold py-5 px-10 rounded-none text-sm uppercase tracking-widest hover:bg-white hover:text-primary transition-colors"
                 >
-                    Start Your Engine <ArrowRight className="ml-3 w-5 h-5" />
+                    Get A Demo <ArrowRight className="ml-3 w-5 h-5" />
                 </a>
                 
                 <div className="mt-24 pt-12 border-t border-white/10 flex flex-col items-center">

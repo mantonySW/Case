@@ -25,8 +25,8 @@ const Header: React.FC = () => {
         </div>
         
         {scrolled && (
-            <a href="#contact" className="hidden md:inline-block bg-accent text-primary text-xs font-bold uppercase tracking-wider px-6 py-3 rounded-none hover:bg-primary hover:text-white transition-colors">
-            Get Strategy
+            <a href="https://article.slxbox.com/demo" target="_blank" rel="noopener noreferrer" className="hidden md:inline-block bg-accent text-white text-xs font-bold uppercase tracking-wider px-6 py-3 rounded-none hover:bg-primary hover:text-white transition-colors">
+            Get A Demo
             </a>
         )}
       </div>
