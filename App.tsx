@@ -1,24 +1,16 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import ChaosSection from './components/ChaosSection';
-import TriedSection from './components/TriedSection';
-import ShiftSection from './components/ShiftSection';
-import ResultsSection from './components/ResultsSection';
-import DifferenceSection from './components/DifferenceSection';
-import FooterCTA from './components/FooterCTA';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import SpotifyCaseStudy from './components/SpotifyCaseStudy';
+import Home from './components/Home';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-bgLight selection:bg-accent selection:text-white font-sans text-primary">
-      <Header />
-      <Hero />
-      <ChaosSection />
-      <TriedSection />
-      <ShiftSection />
-      <ResultsSection />
-      <DifferenceSection />
-      <FooterCTA />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<SpotifyCaseStudy />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </Router>
   );
 }

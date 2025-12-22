@@ -1,7 +1,7 @@
 import React from 'react';
 import FadeIn from './ui/FadeIn';
 import { GridPattern } from './ui/Shapes';
-import { ASSETS } from '../constants';
+import { ASSETS, SPOTIFY_HERO_DATA } from '../constants';
 
 const Hero: React.FC = () => {
   return (
@@ -16,23 +16,26 @@ const Hero: React.FC = () => {
                 </div>
             </FadeIn>
             <FadeIn delay={200}>
-                <h1 className="text-5xl md:text-7xl font-bold text-primary leading-tight tracking-tight mb-8 max-w-5xl">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight tracking-tight mb-8 max-w-5xl">
                     <span className="relative inline-block mr-3 align-middle">
-                        <img
-                            src={ASSETS.spotifyLogo}
-                            alt="Spotify"
-                            className="h-[0.8em] w-auto -mt-2 opacity-100 filter grayscale transition-all duration-300 hover:grayscale-0"
+                        <img 
+                            src={ASSETS.spotifyLogo} 
+                            alt="Spotify" 
+                            className="h-[0.8em] w-auto -mt-2 opacity-100 filter grayscale transition-all duration-300 hover:grayscale-0" 
                         />
                     </span>
-                    Pardot and Salesforce worked. <span className="text-accent">Technically.</span>
+                    's Pardot and Salesforce worked. <span className="text-accent box-decoration-clone px-1">Technically.</span>
                 </h1>
-                <p className="text-xl md:text-2xl text-textMain leading-relaxed max-w-4xl">
-                    Leads came in across 13 countries. Data synced. Reports ran. But nothing connected the way it should—and they knew they were leaving pipeline on the table.
-                </p>
             </FadeIn>
             
+            <FadeIn delay={300}>
+                <p className="text-xl md:text-2xl text-textMain/80 max-w-3xl leading-relaxed font-light mb-12">
+                    {SPOTIFY_HERO_DATA.subtitle}
+                </p>
+            </FadeIn>
+
             <FadeIn delay={400}>
-                <div className="grid grid-cols-2 md:grid-cols-4 border-t border-l border-gray-300 bg-gray-300 gap-px mt-20">
+                <div className="grid grid-cols-2 md:grid-cols-4 border-t border-l border-gray-300 bg-gray-300 gap-px mt-12">
                     <div className="group bg-white p-8 hover:bg-gray-50 transition-colors h-48 flex flex-col justify-between">
                         <p className="font-mono text-[10px] text-textMain uppercase tracking-widest">Client</p>
                         <img src={ASSETS.spotifyLogo} alt="Spotify for Brands" className="h-8 w-auto object-contain self-start mb-2 grayscale group-hover:grayscale-0 transition-all" />
@@ -46,11 +49,11 @@ const Hero: React.FC = () => {
                         <p className="font-bold text-primary text-5xl tracking-tighter">3+ <span className="text-sm font-normal text-textMain ml-1 align-top relative top-2">Years</span></p>
                     </div>
                     <div className="group bg-primary p-8 text-white h-48 flex flex-col justify-between relative overflow-hidden">
-                        <div className="flex items-center gap-3">
+                        <div className="absolute right-0 top-0 p-4">
                             <div className="w-2 h-2 bg-accent"></div>
-                            <p className="font-mono text-[10px] text-accent uppercase tracking-widest">Outcome</p>
                         </div>
-                        <p className="font-bold text-2xl leading-none tracking-tight">Compounding<br/>Growth</p>
+                        <p className="font-mono text-[10px] text-accent uppercase tracking-widest relative z-10">Outcome</p>
+                        <p className="font-bold text-2xl leading-none tracking-tight relative z-10">Compounding<br/>Growth</p>
                     </div>
                 </div>
             </FadeIn>

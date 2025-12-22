@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { SYSTEM_LAYERS } from '../constants';
-import { ChevronRight, X, Play, ArrowLeft, ArrowRight, Globe, Activity, Shield, Settings, MousePointerClick } from 'lucide-react';
+import { ChevronRight, X, Play, ArrowLeft, ArrowRight, Globe, Activity, Shield, Rocket, Settings, MousePointerClick } from 'lucide-react';
 import FadeIn from './ui/FadeIn';
 
 const ICON_MAP: Record<string, React.ReactNode> = {
     'Globe': <Globe />,
     'Activity': <Activity />,
-    'Shield': <Shield />
+    'Shield': <Shield />,
+    'Rocket': <Rocket />
 };
 
 const SystemSection: React.FC = () => {

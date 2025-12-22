@@ -1,65 +1,97 @@
-import React from 'react';
-import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
-import { COLORS } from '../constants';
-
-const data = [
-  { name: 'Launch 1', compound: 10, reset: 10 },
-  { name: 'Launch 2', compound: 25, reset: 12 },
-  { name: 'Launch 3', compound: 45, reset: 11 },
-  { name: 'Launch 4', compound: 70, reset: 13 },
-  { name: 'Launch 5', compound: 100, reset: 12 },
-];
-
-const CustomTooltip = ({ active, payload }: any) => {
-  if (active && payload && payload.length) {
-    return (
-      <div className="bg-primary p-3 border border-gray-700 shadow-xl text-xs">
-        <p className="text-white font-bold mb-2 uppercase tracking-wider">Impact Analysis</p>
-        <p style={{ color: COLORS.accent }} className="font-mono">System: {payload[0].value}</p>
-        <p className="text-gray-400 font-mono">Traditional: {payload[1].value}</p>
-      </div>
-    );
-  }
-  return null;
-};
+import React, { useState, useEffect } from 'react';
+import { Target, Users, BarChart3, Zap } from 'lucide-react';
 
 const GrowthChart: React.FC = () => {
+  const [activeStep, setActiveStep] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveStep((prev) => (prev + 1) % 4);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const steps = [
+    {
+      id: "01",
+      title: "Clean Input",
+      desc: "Filters isolate high-intent signals.",
+      icon: <Target strokeWidth={1.5} />,
+    },
+    {
+      id: "02",
+      title: "Focused Action",
+      desc: "Sales engages ready buyers only.",
+      icon: <Users strokeWidth={1.5} />,
+    },
+    {
+      id: "03",
+      title: "Data Feedback",
+      desc: "Outcomes sync back to marketing.",
+      icon: <BarChart3 strokeWidth={1.5} />,
+    },
+    {
+      id: "04",
+      title: "Auto-Tune",
+      desc: "Logic improves automatically.",
+      icon: <Zap strokeWidth={1.5} />,
+    }
+  ];
+
   return (
-    <div className="w-full flex flex-col">
-      <h3 className="text-center text-xs font-bold text-gray-500 mb-6 uppercase tracking-widest">Momentum Trajectory</h3>
-      <div className="h-64 w-full">
-        <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={data} margin={{ top: 5, right: 20, left: -20, bottom: 5 }}>
-            <CartesianGrid strokeDasharray="0 0" vertical={false} stroke="#e5e7eb" strokeOpacity={0.2} />
-            <XAxis dataKey="name" hide />
-            <YAxis hide />
-            <Tooltip content={<CustomTooltip />} cursor={{stroke: '#e5e7eb', strokeWidth: 1}} />
-            <Line 
-                type="monotone" 
-                dataKey="compound" 
-                stroke={COLORS.accent} 
-                strokeWidth={3} 
-                dot={{ r: 3, fill: COLORS.accent, strokeWidth: 0 }} 
-                activeDot={{ r: 5, stroke: '#fff', strokeWidth: 2 }}
-                isAnimationActive={true}
-            />
-            <Line 
-                type="monotone" 
-                dataKey="reset" 
-                stroke="#9ca3af" 
-                strokeWidth={1} 
-                strokeDasharray="4 4" 
-                dot={false} 
-            />
-          </LineChart>
-        </ResponsiveContainer>
-      </div>
-      <div className="flex justify-center gap-8 mt-6 text-[10px] text-gray-400 font-bold uppercase tracking-widest">
-        <div className="flex items-center gap-2">
-          <span className="w-2 h-2 bg-accent"></span> Spotify System
+    <div className="w-full bg-white p-8 md:p-12 border border-gray-100/50 shadow-sm rounded-sm">
+      {/* Minimal Header */}
+      <div className="flex justify-between items-center mb-16 border-b border-gray-100 pb-6">
+        <div>
+            <h3 className="text-lg font-medium text-primary tracking-tight">The Revenue Loop</h3>
         </div>
-        <div className="flex items-center gap-2">
-          <span className="w-2 h-2 bg-gray-400"></span> Traditional Motion
+        <div className="flex items-center gap-3">
+             <span className="text-[10px] uppercase tracking-widest text-gray-400 font-mono">System Active</span>
+             <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></div>
+        </div>
+      </div>
+
+      {/* Visualization */}
+      <div className="relative">
+        
+        {/* Base Line */}
+        <div className="absolute top-[18px] left-0 w-full h-px bg-gray-100"></div>
+        
+        {/* Progress Line */}
+        <div 
+            className="absolute top-[18px] left-0 h-px bg-primary transition-all duration-1000 ease-in-out"
+            style={{ width: `${(activeStep / (steps.length - 1)) * 100}%` }}
+        ></div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 relative">
+            {steps.map((step, index) => {
+                const isActive = activeStep === index;
+                const isPast = activeStep >= index;
+
+                return (
+                    <div 
+                        key={index}
+                        onClick={() => setActiveStep(index)}
+                        className={`group cursor-pointer flex flex-col items-start transition-all duration-500 ${isPast ? 'opacity-100' : 'opacity-40 hover:opacity-60'}`}
+                    >
+                        {/* Icon Node */}
+                        <div className={`
+                            relative w-9 h-9 rounded-full flex items-center justify-center mb-6 z-10 transition-all duration-500 bg-white border
+                            ${isPast ? 'border-primary text-primary' : 'border-gray-200 text-gray-300'}
+                            ${isActive ? 'ring-4 ring-gray-50 scale-110' : ''}
+                        `}>
+                            {React.cloneElement(step.icon as React.ReactElement<{ className?: string }>, { className: "w-4 h-4" })}
+                        </div>
+
+                        {/* Text */}
+                        <div className="space-y-2 pr-2">
+                            <span className="font-mono text-[9px] uppercase tracking-widest text-gray-400">Step {step.id}</span>
+                            <h4 className={`text-sm font-medium transition-colors ${isActive ? 'text-primary' : 'text-gray-600'}`}>{step.title}</h4>
+                            <p className="text-xs text-gray-500 font-light leading-relaxed">{step.desc}</p>
+                        </div>
+                    </div>
+                );
+            })}
         </div>
       </div>
     </div>

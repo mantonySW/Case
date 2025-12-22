@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify Case Study | SalesLabX</title>
-    <meta name="description" content="How Spotify Built a Revenue Marketing System That Never Had to Restart" />
+    <title>SalesLabX | Unified Revenue Engine</title>
+    <meta name="description" content="Streamline Marketing, Optimize Sales, Grow Revenue" />
     <link rel="icon" type="image/png" href="https://slxcloud.app/wp-content/uploads/2024/03/SLX-favicon.png" />
     
     <!-- Google Fonts: Roboto & IBM Plex Mono (for that technical feel) -->
@@ -36,6 +36,15 @@
               'DEFAULT': '4px',
               'md': '6px',
               'lg': '8px',
+            },
+            animation: {
+              'marquee': 'marquee 40s linear infinite',
+            },
+            keyframes: {
+              marquee: {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-100%)' },
+              }
             }
           }
         }
@@ -56,9 +65,21 @@
           scrollbar-width: none;
       }
     </style>
-  </head>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@18.2.0/",
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "recharts": "https://esm.sh/recharts@2.12.3?external=react,react-dom",
+    "lucide-react": "https://esm.sh/lucide-react@0.363.0?external=react",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3?deps=react@18.2.0,react-dom@18.2.0"
+  }
+}
+</script>
+</head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
