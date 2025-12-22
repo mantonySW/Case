@@ -27,16 +27,16 @@ export default function App() {
                     When Volume Increases,<br/>Friction Becomes Visible.
                 </h2>
                 <div className="grid md:grid-cols-3 gap-px bg-white/10 border border-white/10">
-                     <div className="bg-primary p-10 hover:bg-black/20 transition-colors">
-                        <Globe className="text-accent w-6 h-6 mb-6" />
+                     <div className="bg-primary p-10 hover:bg-black/20 transition-colors flex items-center gap-4">
+                        <Globe className="text-accent w-6 h-6 shrink-0" />
                         <p className="text-white font-medium leading-tight">Across regions and languages</p>
                      </div>
-                     <div className="bg-primary p-10 hover:bg-black/20 transition-colors">
-                        <Layers className="text-accent w-6 h-6 mb-6" />
+                     <div className="bg-primary p-10 hover:bg-black/20 transition-colors flex items-center gap-4">
+                        <Layers className="text-accent w-6 h-6 shrink-0" />
                         <p className="text-white font-medium leading-tight">Across product initiatives</p>
                      </div>
-                     <div className="bg-primary p-10 hover:bg-black/20 transition-colors">
-                        <Activity className="text-accent w-6 h-6 mb-6" />
+                     <div className="bg-primary p-10 hover:bg-black/20 transition-colors flex items-center gap-4">
+                        <Activity className="text-accent w-6 h-6 shrink-0" />
                         <p className="text-white font-medium leading-tight">Across shifting market conditions</p>
                      </div>
                 </div>
