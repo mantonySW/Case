@@ -19,7 +19,7 @@ export const ASSETS = {
 };
 
 export const LINKS = {
-  website: 'https://saleslabx.com',
+  website: 'https://article.slxbox.com/demo',
 };
 
 // Data for Chaos Section
