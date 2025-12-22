@@ -65,6 +65,34 @@
           scrollbar-width: none;
       }
     </style>
+
+    <!-- Mouseflow Tracking -->
+    <script type="text/javascript">
+      window._mfq = window._mfq || [];
+      (function() {
+        var mf = document.createElement("script");
+        mf.type = "text/javascript"; mf.defer = true;
+        mf.src = "//cdn.mouseflow.com/projects/25961fea-e726-4907-aca0-4d0a4026e33a.js";
+        document.getElementsByTagName("head")[0].appendChild(mf);
+      })();
+    </script>
+
+    <!-- Pardot Tracking -->
+    <script type='text/javascript'>
+      piAId = '723833';
+      piCId = '';
+      piHostname = 'go.slxbox.com';
+
+      (function() {
+        function async_load(){
+          var s = document.createElement('script'); s.type = 'text/javascript';
+          s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
+          var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+        }
+        if(window.attachEvent) { window.attachEvent('onload', async_load); }
+        else { window.addEventListener('load', async_load, false); }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
