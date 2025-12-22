@@ -63,7 +63,8 @@ const FooterCTA: React.FC = () => {
                 
                 <div className="mt-24 pt-12 border-t border-white/10 flex flex-col items-center">
                     <img src={ASSETS.logo} alt="SalesLabX" className="h-8 brightness-0 invert mb-6 opacity-50" />
-                    <p className="text-white/40 font-mono text-xs uppercase tracking-widest">Campaigns Reset. Systems Compound.</p>
+                    <p className="text-white/40 font-mono text-xs uppercase tracking-widest">Streamline Marketing, Optimize Sales, Grow Revenue</p>
+                    <p className="text-white/30 text-xs mt-4">&copy; {new Date().getFullYear()} SalesLabX. All rights reserved.</p>
                 </div>
             </FadeIn>
         </div>
