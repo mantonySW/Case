@@ -44,11 +44,11 @@ const Hero: React.FC = () => {
                         <p className="font-bold text-primary text-5xl tracking-tighter">3+ <span className="text-sm font-normal text-textMain ml-1 align-top relative top-2">Years</span></p>
                     </div>
                     <div className="group bg-primary p-8 text-white h-48 flex flex-col justify-between relative overflow-hidden">
-                        <div className="absolute right-0 top-0 p-4">
+                        <div className="flex items-center gap-3">
                             <div className="w-2 h-2 bg-accent"></div>
+                            <p className="font-mono text-[10px] text-accent uppercase tracking-widest">Outcome</p>
                         </div>
-                        <p className="font-mono text-[10px] text-accent uppercase tracking-widest relative z-10">Outcome</p>
-                        <p className="font-bold text-2xl leading-none tracking-tight relative z-10">Compounding<br/>Growth</p>
+                        <p className="font-bold text-2xl leading-none tracking-tight">Compounding<br/>Growth</p>
                     </div>
                 </div>
             </FadeIn>
