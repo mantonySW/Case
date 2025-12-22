@@ -24,14 +24,12 @@ export const LINKS = {
 
 // Data for Chaos Section
 export const CHAOS_DATA = {
-  title: "The Problem Growing Teams Feel—Before They Can Name It",
-  subtitle: "Growth rarely breaks because of strategy. It breaks because motion becomes fragile.",
-  symptoms: [
-    "Launches take longer than they used to",
-    "Every new initiative feels heavier than the last",
-    "Teams rely on heroics to hit deadlines",
-    "Momentum resets instead of carrying forward"
-  ]
+  title: "The system wasn't broken. It was stuck.",
+  subtitle: "The system had drifted the way all systems drift. Lead scoring still reflected old assumptions. Automations built for a different moment were still running—or half-running. Sales and marketing had each adapted around the gaps.",
+  callout: "Nobody broke it. It just drifted.",
+  secondaryText: "Everything functioned. Nothing compounded.",
+  scaleTitle: "Scale made the drift visible. But scale didn't cause it.",
+  scaleDesc: "The same friction shows up in teams a tenth the size—sometimes worse, because there's no one dedicated to fixing it. Complexity isn't about headcount. It's about how many things have to work together."
 };
 
 // Data for System/Layers Section
@@ -72,17 +70,24 @@ export const SYSTEM_LAYERS = [
   }
 ];
 
-export const RESULTS_DATA = {
-  operational: [
-    "Launches became predictable instead of stressful",
-    "Speed increased without sacrificing quality",
-    "Teams stopped solving the same problems repeatedly",
-    "Marketing activity felt cumulative, not exhausting"
-  ],
-  strategic: [
-    "Revenue marketing supported global expansion with confidence",
-    "Education initiatives scaled without added operational drag",
-    "Success stories became easier to produce and reuse",
-    "Growth felt intentional rather than reactive"
-  ]
-};
+export const TRIED_DATA = [
+  {
+    approach: "Hired internally",
+    result: "Thought it was a headcount problem. Turns out it wasn't a one-person job—strategy, ops, design, and data were all intertwined. No single hire could cover it."
+  },
+  {
+    approach: "Consultancy project",
+    result: "Big deliverable. Helped for a quarter. Then the system drifted."
+  },
+  {
+    approach: "Contractors",
+    result: "Disconnected work. Paid for hours, not outcomes. Got tasks done, but nothing tied together."
+  }
+];
+
+export const RESULTS_DATA = [
+  "Sales works Pardot leads again",
+  "Marketing ties campaigns to pipeline",
+  "New requests take days, not quarters",
+  "No SOWs. No drift. No starting over."
+];

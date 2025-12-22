@@ -6,65 +6,61 @@ import { ASSETS, LINKS } from '../constants';
 const FooterCTA: React.FC = () => {
   return (
     <>
-      {/* Quote */}
-      <section className="py-32 px-6 bg-bgLight border-b border-gray-200">
-        <div className="max-w-5xl mx-auto text-center">
+      {/* Section 6 - Why SalesLabX */}
+      <section className="py-32 px-6 bg-primary text-white">
+        <div className="max-w-6xl mx-auto">
             <FadeIn>
-                <div className="text-6xl text-accent/20 font-serif mb-6">“</div>
-                <blockquote className="text-3xl md:text-5xl font-bold text-primary leading-tight mb-12">
-                    SalesLabX helped us create a system that allowed us to move <span className="text-accent">quickly and confidently</span> as we scaled.
-                </blockquote>
-                <div className="flex flex-col items-center">
-                    <img src={ASSETS.spotifyLogo} alt="Spotify" className="h-8 w-auto mb-4 grayscale" />
-                    <cite className="not-italic font-mono text-xs font-bold text-gray-400 uppercase tracking-widest">
-                        Executive Perspective
-                    </cite>
+                <div className="inline-flex items-center gap-2 px-3 py-1 border border-white/20 text-accent font-mono text-[10px] font-bold uppercase tracking-wider mb-8">
+                  Section 6 — Why SalesLabX
+                </div>
+
+                <h2 className="text-4xl md:text-6xl font-bold mb-12 leading-tight max-w-4xl">
+                  Why SalesLabX
+                </h2>
+
+                <div className="space-y-8 max-w-4xl">
+                  <p className="text-xl text-white/80 leading-relaxed">
+                    This is the pattern. Drift, fix, decay, repeat—until the loop runs continuously.
+                  </p>
+
+                  <p className="text-xl text-white/80 leading-relaxed">
+                    Spotify didn't need a bigger project. They needed a different model. That's why they—and 500+ other organizations—run their revenue engine on SalesLabX.
+                  </p>
                 </div>
             </FadeIn>
-        </div>
-      </section>
 
-      {/* Why This Matters */}
-      <section className="py-32 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
-            <FadeIn>
-                <h2 className="text-4xl md:text-5xl font-bold text-primary mb-12">Why This Matters <span className="text-textMain/40 font-light block mt-2">(Even If You’re Not Spotify)</span></h2>
-                <div className="prose prose-lg text-xl text-textMain font-light leading-relaxed mb-16 max-w-none">
-                    <p>Spotify’s scale made the need obvious, but the pattern is universal. Any team experiencing <strong className="text-primary font-bold">more launches</strong>, <strong className="text-primary font-bold">more segments</strong>, or <strong className="text-primary font-bold">less tolerance for error</strong> eventually needs marketing to feel self-reinforcing.</p>
-                </div>
-                
-                <div className="border-l-4 border-accent pl-8 py-2">
-                    <p className="text-3xl font-bold text-primary leading-tight">
-                        The goal isn’t to do more.<br/>
-                        <span className="text-accent">It’s to stop starting over.</span>
-                    </p>
-                </div>
+            <FadeIn delay={200}>
+              <div className="mt-16 bg-black/30 border border-white/20 p-12">
+                <p className="text-3xl font-bold text-white leading-tight">
+                  Spotify saw it. 500+ other organizations saw it. Systems compound—or they decay. <span className="text-accent">There's no in-between.</span>
+                </p>
+              </div>
             </FadeIn>
         </div>
       </section>
 
       {/* CTA */}
-      <section id="contact" className="py-32 px-6 bg-primary text-center">
+      <section id="contact" className="py-32 px-6 bg-accent text-center">
         <div className="max-w-3xl mx-auto">
             <FadeIn>
                 <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-none">
-                    Ready to Build <br/><span className="text-accent">Durable Systems?</span>
+                    Ready to Build <br/>Durable Systems?
                 </h2>
-                <p className="text-white/60 text-xl mb-16">
-                    Let’s design the system behind your next phase of growth.
+                <p className="text-white/80 text-xl mb-16">
+                    Let's design the system behind your next phase of growth.
                 </p>
-                
+
                 <a
                     href={LINKS.website}
-                    className="inline-flex items-center bg-accent text-white font-bold py-5 px-10 rounded-none text-sm uppercase tracking-widest hover:bg-white hover:text-primary transition-colors"
+                    className="inline-flex items-center bg-white text-primary font-bold py-5 px-10 rounded-none text-sm uppercase tracking-widest hover:bg-primary hover:text-white transition-colors"
                 >
                     Schedule a Strategy Session <ArrowRight className="ml-3 w-5 h-5" />
                 </a>
-                
-                <div className="mt-24 pt-12 border-t border-white/10 flex flex-col items-center">
-                    <img src={ASSETS.logo} alt="SalesLabX" className="h-8 brightness-0 invert mb-6 opacity-50" />
-                    <p className="text-white/40 font-mono text-xs uppercase tracking-widest">Streamline Marketing, Optimize Sales, Grow Revenue</p>
-                    <p className="text-white/30 text-xs mt-4">&copy; {new Date().getFullYear()} SalesLabX. All rights reserved.</p>
+
+                <div className="mt-24 pt-12 border-t border-white/20 flex flex-col items-center">
+                    <img src={ASSETS.logo} alt="SalesLabX" className="h-8 brightness-0 invert mb-6 opacity-70" />
+                    <p className="text-white/60 font-mono text-xs uppercase tracking-widest">Streamline Marketing, Optimize Sales, Grow Revenue</p>
+                    <p className="text-white/50 text-xs mt-4">&copy; {new Date().getFullYear()} SalesLabX. All rights reserved.</p>
                 </div>
             </FadeIn>
         </div>

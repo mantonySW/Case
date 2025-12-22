@@ -16,17 +16,19 @@ const Hero: React.FC = () => {
                 </div>
             </FadeIn>
             <FadeIn delay={200}>
-                <h1 className="text-5xl md:text-7xl font-bold text-primary leading-tight tracking-tight mb-12 max-w-5xl">
-                    How 
-                    <span className="relative inline-block mx-3 align-middle">
-                        <img 
-                            src={ASSETS.spotifyLogo} 
-                            alt="Spotify" 
-                            className="h-[0.8em] w-auto -mt-2 opacity-100 filter grayscale transition-all duration-300 hover:grayscale-0" 
+                <h1 className="text-5xl md:text-7xl font-bold text-primary leading-tight tracking-tight mb-8 max-w-5xl">
+                    <span className="relative inline-block mr-3 align-middle">
+                        <img
+                            src={ASSETS.spotifyLogo}
+                            alt="Spotify"
+                            className="h-[0.8em] w-auto -mt-2 opacity-100 filter grayscale transition-all duration-300 hover:grayscale-0"
                         />
                     </span>
-                    Built a Revenue Marketing System That <span className="text-accent box-decoration-clone px-1">Never Had to Restart</span>
+                    Pardot and Salesforce worked. <span className="text-accent">Technically.</span>
                 </h1>
+                <p className="text-xl md:text-2xl text-textMain leading-relaxed max-w-4xl">
+                    Leads came in across 13 countries. Data synced. Reports ran. But nothing connected the way it should—and they knew they were leaving pipeline on the table.
+                </p>
             </FadeIn>
             
             <FadeIn delay={400}>

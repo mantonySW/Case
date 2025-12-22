@@ -1,61 +1,48 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
 import FadeIn from './ui/FadeIn';
-import GrowthChart from './GrowthChart';
-import { CirclePattern } from './ui/Shapes';
+import { Check } from 'lucide-react';
 
 const ShiftSection: React.FC = () => {
   return (
     <section className="py-32 px-6 bg-primary text-white relative overflow-hidden border-b border-white/10">
-        
-        <div className="max-w-7xl mx-auto relative z-10">
-           <div className="grid lg:grid-cols-2 gap-24 items-start">
-               <div className="order-2 lg:order-1">
-                   <FadeIn>
-                        <div className="inline-block px-3 py-1 border border-white/20 text-accent font-mono text-[10px] font-bold uppercase tracking-widest mb-8">
-                            Strategic Shift
-                        </div>
-                       <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
-                           Designing for <br/> <span className="text-accent">Continuity</span>
-                       </h2>
-                       <p className="text-xl text-white/60 mb-12 font-normal max-w-lg leading-relaxed">
-                           The work began with a simple principle: <strong className="text-white font-medium block mt-2">Every launch should make the next one easier.</strong>
-                       </p>
-                       
-                       <div className="border border-white/10 bg-black/20">
-                           <ul className="divide-y divide-white/10">
-                               {[
-                                   { from: "Improvisation", to: "Structure" },
-                                   { from: "Reinvention", to: "Reuse" },
-                                   { from: "Decision Fatigue", to: "Consistency" },
-                                   { from: "Isolated Events", to: "Compounding Activity" }
-                               ].map((item, i) => (
-                                   <li key={i} className="flex items-center justify-between p-6 hover:bg-white/5 transition-colors group">
-                                       <span className="text-white/40 font-mono text-sm uppercase tracking-wide decoration-white/20 group-hover:text-white/60 transition-colors w-1/3">{item.from}</span>
-                                       <ArrowRight className="w-4 h-4 text-accent" />
-                                       <span className="font-bold text-white text-lg tracking-tight text-right w-1/3">{item.to}</span>
-                                   </li>
-                               ))}
-                           </ul>
-                       </div>
-                   </FadeIn>
-               </div>
-               
-               <div className="order-1 lg:order-2">
-                   <FadeIn delay={200}>
-                       <div className="bg-white p-6 rounded-sm shadow-none transform rotate-0">
-                            <GrowthChart />
-                       </div>
-                        <div className="flex items-start gap-4 mt-8 border-l-2 border-accent pl-6">
-                            <p className="text-sm text-white/60 font-normal leading-relaxed max-w-sm">
-                            "Instead of treating campaigns as isolated events, Spotify invested in continuous revenue motion."
-                            </p>
-                        </div>
-                   </FadeIn>
-               </div>
-           </div>
+        <div className="max-w-6xl mx-auto relative z-10">
+          <FadeIn>
+            <div className="inline-block px-3 py-1 border border-white/20 text-accent font-mono text-[10px] font-bold uppercase tracking-widest mb-8">
+                Section 3 — What Changed
+            </div>
+
+            <h2 className="text-4xl md:text-6xl font-bold mb-12 leading-tight max-w-4xl">
+                They activated a SalesLabX subscription. <span className="text-accent">The system started compounding.</span>
+            </h2>
+          </FadeIn>
+
+          <FadeIn delay={200}>
+            <div className="space-y-8 max-w-4xl">
+              <p className="text-xl text-white/80 leading-relaxed">
+                Tracking got cleaned up. Forms rebuilt to capture real buying signals. Lead scoring rewired based on actual behavior. Routing fixed. Sales started trusting the data again. Alerts started firing on high-intent signals. Nurtures tuned to what was converting. The noise cleared out.
+              </p>
+
+              <p className="text-xl text-white/80 leading-relaxed">
+                Then a new campaign launched in three days. Not because anyone worked faster—because the system was ready.
+              </p>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={400}>
+            <div className="mt-16 bg-black/30 border border-white/20 p-12">
+              <div className="flex items-start gap-4 mb-8">
+                <Check className="w-8 h-8 text-accent shrink-0" />
+                <p className="text-2xl font-bold text-white leading-tight">
+                  Each improvement built on the last. No restarts. No re-onboarding. No managing another vendor.
+                </p>
+              </div>
+              <p className="text-lg text-white/70 leading-relaxed">
+                And because SalesLabX runs the loop across 500+ organizations, Spotify's system didn't just benefit from its own data—it benefited from patterns across every system running on SalesLabX. What's working right now, not what worked last year.
+              </p>
+            </div>
+          </FadeIn>
         </div>
-     </section>
+    </section>
   );
 };
 
