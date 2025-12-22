@@ -17,14 +17,15 @@ const Hero: React.FC = () => {
             </FadeIn>
             <FadeIn delay={200}>
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight tracking-tight mb-8 max-w-5xl">
-                    <span className="relative inline-block mr-3 align-middle">
-                        <img 
-                            src={ASSETS.spotifyLogo} 
-                            alt="Spotify" 
-                            className="h-[0.8em] w-auto -mt-2 opacity-100 filter grayscale transition-all duration-300 hover:grayscale-0" 
+                    <span className="inline-flex items-center gap-1 mr-2">
+                        <img
+                            src={ASSETS.spotifyLogo}
+                            alt="Spotify"
+                            className="h-[1em] w-auto opacity-100 filter grayscale transition-all duration-300 hover:grayscale-0"
                         />
+                        <span>'s</span>
                     </span>
-                    's Pardot and Salesforce worked. <span className="text-accent box-decoration-clone px-1">Technically.</span>
+                    Pardot and Salesforce worked. <span className="text-accent box-decoration-clone px-1">Technically.</span>
                 </h1>
             </FadeIn>
             
