@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import SpotifyCaseStudy from './components/SpotifyCaseStudy';
 import Home from './components/Home';
@@ -6,7 +6,6 @@ import ExitIntentPopup from './components/ExitIntentPopup';
 
 export default function App() {
   const hasSentRef = useRef(false);
-  const [trackingFired, setTrackingFired] = useState(false);
 
   useEffect(() => {
     const getEmailParam = () => {
@@ -61,10 +60,6 @@ export default function App() {
           url: window.location.href,
           pixelUrl: trackingPixel.src
         });
-
-        setTrackingFired(true);
-
-        setTimeout(() => setTrackingFired(false), 3000);
       }
     };
 
@@ -76,14 +71,6 @@ export default function App() {
 
   return (
     <Router>
-      {trackingFired && (
-        <div className="fixed top-4 right-4 z-[9999] bg-green-500 text-white px-6 py-3 rounded-lg shadow-2xl animate-pulse border-2 border-green-300">
-          <div className="flex items-center gap-2 font-bold">
-            <span className="text-xl">🎯</span>
-            <span>Tracking Pixel Fired!</span>
-          </div>
-        </div>
-      )}
       <Routes>
         <Route path="/" element={<SpotifyCaseStudy />} />
         <Route path="/home" element={<Home />} />
