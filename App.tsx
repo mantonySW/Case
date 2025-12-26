@@ -6,9 +6,28 @@ import ExitIntentPopup from './components/ExitIntentPopup';
 
 export default function App() {
   useEffect(() => {
-    const email = new URLSearchParams(window.location.search).get("e");
-    if (!email) return;
+    const getEmailParam = () => {
+      const searchParams = new URLSearchParams(window.location.search);
+      let email = searchParams.get("e");
 
+      if (!email && window.location.hash) {
+        const hashParts = window.location.hash.split('?');
+        if (hashParts.length > 1) {
+          const hashParams = new URLSearchParams(hashParts[1]);
+          email = hashParams.get("e");
+        }
+      }
+
+      return email;
+    };
+
+    const email = getEmailParam();
+    if (!email) {
+      console.log('No email parameter found - tracking disabled');
+      return;
+    }
+
+    console.log('Email tracking initialized for:', email);
     let hasSent = false;
 
     const onScroll = () => {
@@ -22,6 +41,7 @@ export default function App() {
         const encodedEmail = encodeURIComponent(email);
         const trackingPixel = new Image();
         trackingPixel.src = `https://go.slxbox.com/l/722833/2025-07-30/35kn1r?email=${encodedEmail}&page_url=${pageUrl}`;
+        console.log('Tracking pixel fired at', scrolledPercent.toFixed(1), '% scroll depth');
       }
     };
 
