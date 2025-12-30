@@ -17,17 +17,7 @@ const Hero: React.FC = () => {
             </FadeIn>
             <FadeIn delay={200}>
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight tracking-tight mb-8 max-w-5xl">
-                    <span className="inline-flex items-center gap-1 mr-2">
-                        <a href="https://www.saleslabx.com/" target="_blank" rel="noopener noreferrer">
-                            <img
-                                src={ASSETS.spotifyLogo}
-                                alt="Spotify"
-                                className="h-[1em] w-auto opacity-100 filter grayscale transition-all duration-300 hover:grayscale-0"
-                            />
-                        </a>
-                        <span>'s</span>
-                    </span>
-                    Pardot and Salesforce worked. <span className="text-accent box-decoration-clone px-1">Technically.</span>
+                    Spotify's Pardot and Salesforce worked. <span className="text-accent box-decoration-clone px-1">Technically.</span>
                 </h1>
             </FadeIn>
             
