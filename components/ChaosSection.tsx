@@ -18,7 +18,7 @@ const ChaosSection: React.FC = () => {
             {CHAOS_DATA.subtitle}
           </p>
           <p className="text-lg text-textMain/80 leading-relaxed font-light italic max-w-xl">
-            "Nobody broke it. It just drifted. Everything functioned. Nothing compounded."
+            "Nobody was doing anything wrong- things just drifted. Everything was technically functioning but not actually producing results."
           </p>
           
           <div className="mt-12 space-y-0 border-t border-gray-200">

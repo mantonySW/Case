@@ -25,13 +25,13 @@ export const LINKS = {
 // Spotify Case Study Hero Data
 export const SPOTIFY_HERO_DATA = {
   title: "Spotify's Pardot and Salesforce worked. Technically.",
-  subtitle: "Leads came in across 13 countries. Data synced. Reports ran. But nothing connected the way it should—and they knew they were leaving pipeline on the table."
+  subtitle: "Leads were coming in from 13 countries, data was syncing, and reports were running. But nothing connected the way it should, and they knew they were leaving valuable pipeline on the table."
 };
 
 // Data for Chaos Section (The Problem)
 export const CHAOS_DATA = {
   title: "The system wasn't broken. It was stuck.",
-  subtitle: "The system had drifted the way all systems drift. Lead scoring still reflected old assumptions. Automations built for a different moment were still running—or half-running. Sales and marketing had each adapted around the gaps.",
+  subtitle: "The system had drifted the way all systems drift. Lead scoring still reflected old assumptions. Automations built for a different moment were still running (or half-running). Sales and marketing had each adapted around the gaps.",
   symptoms: [
     "Lead scoring reflected old assumptions",
     "Automations were half-running",
@@ -48,11 +48,11 @@ export const ATTEMPTS_DATA = [
   },
   {
     title: "Consultancy project",
-    outcome: "Big deliverable. Helped for a quarter. Then the system drifted."
+    outcome: "They asked for a big deliverable, and it helped for a quarter or so. Then the system continued drifting."
   },
   {
     title: "Contractors",
-    outcome: "Disconnected work. Paid for hours, not outcomes. Got tasks done, but nothing tied together."
+    outcome: "The work done by a spattering of different individuals was disconnected from their vision of success. They ended up paying for hours, not outcomes. Tasks got done, but nothing tied together."
   }
 ];
 

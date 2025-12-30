@@ -21,7 +21,7 @@ const ShiftSection: React.FC = () => {
                            The system started <span className="text-accent">compounding.</span>
                        </p>
                        <p className="text-lg text-white/60 mb-12 font-normal max-w-lg leading-relaxed">
-                           Sales started trusting the data again. Alerts started firing on high-intent signals. The noise cleared out. Then a new campaign launched in three days. Not because anyone worked faster—because the system was ready.
+                           Sales started trusting the data again. Alerts started firing on high-intent signals. The noise cleared out. Then a new campaign launched in three days. Not because anyone worked faster, but because the system was finally ready.
                        </p>
                        
                        <div className="flex flex-col gap-4">
@@ -46,11 +46,6 @@ const ShiftSection: React.FC = () => {
                        <div className="bg-white p-6 rounded-sm shadow-none transform rotate-0">
                             <GrowthChart />
                        </div>
-                        <div className="flex items-start gap-4 mt-8 border-l-2 border-accent pl-6">
-                            <p className="text-sm text-white/60 font-normal leading-relaxed max-w-sm">
-                            "Each improvement built on the last. SalesLabX runs the loop across 500+ organizations."
-                            </p>
-                        </div>
                    </FadeIn>
                </div>
            </div>

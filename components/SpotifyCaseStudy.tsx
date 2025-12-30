@@ -3,6 +3,7 @@ import Header from './Header';
 import Hero from './Hero';
 import ChaosSection from './ChaosSection';
 import ShiftSection from './ShiftSection';
+import RevenueLoopSection from './RevenueLoopSection';
 import SystemSection from './SystemSection';
 import ResultsSection from './ResultsSection';
 import FooterCTA from './FooterCTA';
@@ -38,14 +39,16 @@ export default function SpotifyCaseStudy() {
                     ))}
                 </div>
                 <div className="mt-12 text-center">
-                    <p className="text-lg text-primary font-medium">Every approach patched one issue. Then another surfaced. The pattern kept repeating.</p>
+                    <p className="text-lg text-primary font-medium">Every approach patched one issue. Then another surfaced, and the pattern kept repeating.</p>
                 </div>
             </FadeIn>
         </div>
       </section>
 
       <ShiftSection />
-      
+
+      <RevenueLoopSection />
+
       <SystemSection />
       
       <ResultsSection />
