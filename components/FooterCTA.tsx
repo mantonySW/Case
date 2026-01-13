@@ -50,7 +50,7 @@ const FooterCTA: React.FC = () => {
         <div className="max-w-3xl mx-auto">
             <FadeIn>
                 <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
-                    So, Drift, Fix, Decay, and Repeat? <br/><span className="text-accent">Or Choose Continuous Growth?</span>
+                    <span className="whitespace-nowrap">So, Drift, Fix, Decay, and Repeat?</span> <br/><span className="text-accent whitespace-nowrap">Or Choose Continuous Growth?</span>
                 </h2>
                 <p className="text-white/60 text-xl mb-16">
                     Spotify saw it. 500+ other organizations saw it. Systems either compound on their success or they decay. There's no in-between.
