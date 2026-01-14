@@ -57,7 +57,7 @@ const FooterCTA: React.FC = () => {
                 </p>
                 
                 <a
-                    href="https://article.slxbox.com/demo"
+                    href="https://usecases.saleslabx.com/#/demo"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-accent text-white font-bold py-5 px-10 rounded-none text-sm uppercase tracking-widest hover:bg-white hover:text-primary transition-colors"

@@ -72,7 +72,7 @@ const Home = () => {
             ))}
           </div>
 
-          <a href="#demo" className="bg-accent text-primary text-[10px] font-bold uppercase tracking-widest px-6 py-3 rounded-none hover:bg-white hover:text-primary transition-colors border border-accent">
+          <a href="https://usecases.saleslabx.com/#/demo" target="_blank" rel="noopener noreferrer" className="bg-accent text-primary text-[10px] font-bold uppercase tracking-widest px-6 py-3 rounded-none hover:bg-white hover:text-primary transition-colors border border-accent">
             Get a Demo
           </a>
         </div>
@@ -106,7 +106,7 @@ const Home = () => {
                 
                 <FadeIn delay={400}>
                     <div className="flex flex-col md:flex-row items-center gap-6">
-                        <a href="#demo" className="group bg-accent text-primary text-xs font-bold uppercase tracking-widest px-10 py-5 hover:bg-white transition-all flex items-center gap-3">
+                        <a href="https://usecases.saleslabx.com/#/demo" target="_blank" rel="noopener noreferrer" className="group bg-accent text-primary text-xs font-bold uppercase tracking-widest px-10 py-5 hover:bg-white transition-all flex items-center gap-3">
                             Book a Demo
                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                         </a>
