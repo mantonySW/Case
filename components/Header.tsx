@@ -125,7 +125,7 @@ const Header: React.FC = () => {
                   <div className="grid grid-cols-3 gap-8">
                     {/* Strategy & Alignment */}
                     <div className="space-y-6">
-                      <div className="font-mono text-[10px] font-bold uppercase tracking-widest text-gray-400 border-b border-gray-100 pb-2 leading-tight">
+                      <div className="font-mono !text-[10px] font-bold uppercase tracking-widest text-gray-400 border-b border-gray-100 pb-2 leading-tight">
                         Strategy & Alignment
                       </div>
                       <div className="space-y-6">
@@ -136,10 +136,10 @@ const Header: React.FC = () => {
                             </svg>
                           </div>
                           <div>
-                            <div className="text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
+                            <div className="!text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
                               Marketing → Sales Alignment
                             </div>
-                            <p className="text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
+                            <p className="!text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
                               Unify definitions, stages, and signals so marketing and sales operate as one revenue system.
                             </p>
                           </div>
@@ -152,10 +152,10 @@ const Header: React.FC = () => {
                             </svg>
                           </div>
                           <div>
-                            <div className="text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
+                            <div className="!text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
                               Go-To-Market System Design
                             </div>
-                            <p className="text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
+                            <p className="!text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
                               Architect the full GTM motion—people, process, data, and tech—around revenue outcomes.
                             </p>
                           </div>
@@ -169,10 +169,10 @@ const Header: React.FC = () => {
                             </svg>
                           </div>
                           <div>
-                            <div className="text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
+                            <div className="!text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
                               Revenue Team Enablement
                             </div>
-                            <p className="text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
+                            <p className="!text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
                               Equip marketing and sales teams with the systems, dashboards, and workflows they actually use.
                             </p>
                           </div>
@@ -182,7 +182,7 @@ const Header: React.FC = () => {
 
                     {/* Operations & Optimization */}
                     <div className="space-y-6">
-                      <div className="font-mono text-[10px] font-bold uppercase tracking-widest text-gray-400 border-b border-gray-100 pb-2 leading-tight">
+                      <div className="font-mono !text-[10px] font-bold uppercase tracking-widest text-gray-400 border-b border-gray-100 pb-2 leading-tight">
                         Operations & Optimization
                       </div>
                       <div className="space-y-6">
@@ -193,10 +193,10 @@ const Header: React.FC = () => {
                             </svg>
                           </div>
                           <div>
-                            <div className="text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
+                            <div className="!text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
                               Revenue Pipeline Acceleration
                             </div>
-                            <p className="text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
+                            <p className="!text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
                               Turn marketing activity into predictable, sales-ready pipeline with clean handoffs and real attribution.
                             </p>
                           </div>
@@ -209,10 +209,10 @@ const Header: React.FC = () => {
                             </svg>
                           </div>
                           <div>
-                            <div className="text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
+                            <div className="!text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
                               Lead Lifecycle & Optimization
                             </div>
-                            <p className="text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
+                            <p className="!text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
                               Design and operationalize MQL, SQL, SAL, and opportunity flows that actually convert.
                             </p>
                           </div>
@@ -225,10 +225,10 @@ const Header: React.FC = () => {
                             </svg>
                           </div>
                           <div>
-                            <div className="text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
+                            <div className="!text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
                               Salesforce & Pardot Ops
                             </div>
-                            <p className="text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
+                            <p className="!text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
                               Fix what's broken, optimize what's working, and scale without duct tape.
                             </p>
                           </div>
@@ -241,10 +241,10 @@ const Header: React.FC = () => {
                             </svg>
                           </div>
                           <div>
-                            <div className="text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
+                            <div className="!text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
                               Scalable Event Engines
                             </div>
-                            <p className="text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
+                            <p className="!text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
                               Build repeatable event and webinar systems that generate demand—not just attendance.
                             </p>
                           </div>
@@ -254,7 +254,7 @@ const Header: React.FC = () => {
 
                     {/* Data & Intelligence */}
                     <div className="space-y-6">
-                      <div className="font-mono text-[10px] font-bold uppercase tracking-widest text-gray-400 border-b border-gray-100 pb-2 leading-tight">
+                      <div className="font-mono !text-[10px] font-bold uppercase tracking-widest text-gray-400 border-b border-gray-100 pb-2 leading-tight">
                         Data & Intelligence
                       </div>
                       <div className="space-y-6">
@@ -265,10 +265,10 @@ const Header: React.FC = () => {
                             </svg>
                           </div>
                           <div>
-                            <div className="text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
+                            <div className="!text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
                               Campaign Attribution & ROI
                             </div>
-                            <p className="text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
+                            <p className="!text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
                               Connect campaigns, emails, and touchpoints to pipeline and revenue—no black boxes.
                             </p>
                           </div>
@@ -281,10 +281,10 @@ const Header: React.FC = () => {
                             </svg>
                           </div>
                           <div>
-                            <div className="text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
+                            <div className="!text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
                               Data-Driven Personalization
                             </div>
-                            <p className="text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
+                            <p className="!text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
                               Deliver relevant, human experiences powered by clean data and behavioral signals.
                             </p>
                           </div>
@@ -297,10 +297,10 @@ const Header: React.FC = () => {
                             </svg>
                           </div>
                           <div>
-                            <div className="text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
+                            <div className="!text-sm font-bold text-[#001c39] mb-1 group-hover/item:text-[#1cafec] transition-colors leading-tight">
                               Executive Revenue Intel
                             </div>
-                            <p className="text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
+                            <p className="!text-[11px] text-gray-400 leading-tight font-light pr-2 m-0 p-0">
                               Give leaders clear, trustworthy visibility into what's working, what's not, and why.
                             </p>
                           </div>
@@ -311,8 +311,8 @@ const Header: React.FC = () => {
 
                   {/* Footer Action */}
                   <div className="mt-8 pt-4 border-t border-gray-50 flex justify-between items-center">
-                    <span className="text-[10px] font-mono text-gray-400 leading-none">Explore the possibilities</span>
-                    <a href="#" className="text-[10px] font-bold uppercase tracking-widest text-[#1cafec] flex items-center gap-2 hover:text-[#001c39] transition-colors no-underline leading-none">
+                    <span className="!text-[10px] font-mono text-gray-400 leading-none">Explore the possibilities</span>
+                    <a href="#" className="!text-[10px] font-bold uppercase tracking-widest text-[#1cafec] flex items-center gap-2 hover:text-[#001c39] transition-colors no-underline leading-none">
                       View Full Feature Index
                       <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
