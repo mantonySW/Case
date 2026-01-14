@@ -62,7 +62,11 @@ const ExitIntentPopup: React.FC = () => {
           </p>
 
           <p className="text-white/70 text-lg leading-relaxed max-w-xl mx-auto">
-            Four questions. Two minutes. You'll know exactly where the gaps are, and what's worth fixing first.
+            Four questions. Two minutes.
+          </p>
+
+          <p className="text-white/70 text-lg leading-relaxed max-w-xl mx-auto">
+            You'll know exactly where the gaps are, and what's worth fixing first.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
