@@ -29,7 +29,12 @@ const ExitIntentPopup: React.FC = () => {
   };
 
   const handleCTA = () => {
-    window.open('https://revenueengine.slxbox.com/', '_blank', 'noopener,noreferrer');
+    const urlParams = new URLSearchParams(window.location.search);
+    const email = urlParams.get('e') || urlParams.get('email');
+    const diagnosticUrl = email
+      ? `https://2min.slxbox.com?e=${encodeURIComponent(email)}`
+      : 'https://2min.slxbox.com?e=';
+    window.open(diagnosticUrl, '_blank', 'noopener,noreferrer');
     setIsVisible(false);
   };
 
@@ -47,18 +52,17 @@ const ExitIntentPopup: React.FC = () => {
         </button>
 
         <div className="text-center space-y-6">
-          <div className="inline-block px-4 py-1.5 bg-accent/10 border border-accent/30 text-accent text-xs font-bold uppercase tracking-wider mb-2">
-            Wait! Before You Go...
-          </div>
-
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-            Ready to Build Your Own<br />
-            <span className="text-accent">Revenue Engine?</span>
+            The Revenue Engine<br />
+            <span className="text-accent">Diagnostic</span>
           </h2>
 
-          <p className="text-white/80 text-lg leading-relaxed max-w-xl mx-auto">
-            Get the complete Revenue Engine Playbook used by industry leaders like Spotify.
-            A proven system for B2B marketing, sales, and results.
+          <p className="text-white/90 text-xl leading-relaxed max-w-xl mx-auto font-light">
+            Is your marketing automation connected to revenue?
+          </p>
+
+          <p className="text-white/70 text-lg leading-relaxed max-w-xl mx-auto">
+            Four questions. Two minutes. You'll know exactly where the gaps are, and what's worth fixing first.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
@@ -66,29 +70,14 @@ const ExitIntentPopup: React.FC = () => {
               onClick={handleCTA}
               className="bg-accent text-white font-bold uppercase tracking-wider px-8 py-4 text-sm hover:bg-accent/90 transition-all hover:scale-105 shadow-lg hover:shadow-accent/50 w-full sm:w-auto"
             >
-              Get the System for $995
+              Take the Diagnostic
             </button>
             <button
               onClick={handleClose}
               className="text-white/60 hover:text-white text-sm font-medium transition-colors w-full sm:w-auto"
             >
-              No thanks, I'll figure it out myself
+              Not right now
             </button>
-          </div>
-
-          <div className="grid grid-cols-3 gap-4 pt-6 border-t border-white/10">
-            <div className="text-center">
-              <div className="text-accent text-2xl font-bold">10M+</div>
-              <div className="text-white/60 text-xs uppercase tracking-wide">Records Managed</div>
-            </div>
-            <div className="text-center">
-              <div className="text-accent text-2xl font-bold">90 Days</div>
-              <div className="text-white/60 text-xs uppercase tracking-wide">Time to Value</div>
-            </div>
-            <div className="text-center">
-              <div className="text-accent text-2xl font-bold">$100M+</div>
-              <div className="text-white/60 text-xs uppercase tracking-wide">Revenue Influenced</div>
-            </div>
           </div>
         </div>
       </div>
